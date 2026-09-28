@@ -1,0 +1,32 @@
+const ROLES = Object.freeze({
+  USER: 'user',
+  ADMIN: 'admin',
+});
+
+const ERROR_CODES = Object.freeze({
+  VALIDATION_ERROR: 'VALIDATION_ERROR',
+  UNAUTHORIZED: 'UNAUTHORIZED',
+  FORBIDDEN: 'FORBIDDEN',
+  NOT_FOUND: 'NOT_FOUND',
+  CONFLICT: 'CONFLICT',
+  TOKEN_EXPIRED: 'TOKEN_EXPIRED',
+  INVALID_TOKEN: 'INVALID_TOKEN',
+  TOO_MANY_REQUESTS: 'TOO_MANY_REQUESTS',
+  ACCOUNT_LOCKED: 'ACCOUNT_LOCKED',
+  EMAIL_NOT_VERIFIED: 'EMAIL_NOT_VERIFIED',
+  RESET_TOKEN_INVALID: 'RESET_TOKEN_INVALID',
+  SESSION_REVOKED: 'SESSION_REVOKED',
+});
+
+const COOKIE_OPTIONS = Object.freeze({
+  httpOnly: true,
+  sameSite: 'strict',
+  secure: false,
+  path: '/',
+});
+
+module.exports = {
+  ROLES,
+  ERROR_CODES,
+  COOKIE_OPTIONS,
+};
